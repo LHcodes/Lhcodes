@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+
+    height: 125px;
+    width: 100%;
+
+}
+
+.logo img {
+    width: 157px;
+    height: 81px;
+
+    cursor: pointer;
+}
+
+
+
+.icon img {
+
+    width: 30px;
+    height: 30px;
+
+    fill: white;
+
+    cursor: pointer;
+}
