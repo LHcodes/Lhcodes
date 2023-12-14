@@ -1,0 +1,16 @@
+.app-container {
+   width: 100%;
+   
+}
+header {
+    max-width: 360px;
+    margin: auto;
+    margin: 0px 20px;
+    margin-bottom: 15px;
+}
+
+main, footer {
+    width: 360px;
+    margin: auto;
+}
+

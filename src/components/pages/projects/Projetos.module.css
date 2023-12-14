@@ -1,0 +1,47 @@
+
+
+.projeto{
+    width: 290px;
+    margin: auto;
+    margin-top: 50px;
+    
+    
+}
+
+.projeto > img {
+    width: 290px;
+    height: 338px;
+    border-radius: 3px;
+
+}
+
+.projeto .nome_projeto {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.icon_projeto{
+    cursor: pointer;
+}
+
+.projeto .nome_projeto img{
+    margin-right: 20px;
+}
+
+.nome_projeto h3 {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.text_projeto {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.ferramentas_projeto{
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #6CACE4;
+}

@@ -1,11 +1,27 @@
+@font-face {
+    font-family:'GT Walsheim Pro' ;
+    src: url('../public/fonts/GTWalsheimProBold.ttf') format('truetype'), url('../public/fonts/GTWalsheimProBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family:'GT Walsheim Pro' ;
+    src: url('../public/fonts/GTWalsheimProRegular.ttf') format('truetype'), url('../public/fonts/GTWalsheimProRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    
 }
 
 #root{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     background-color: #111111;
+    color: white;
 }

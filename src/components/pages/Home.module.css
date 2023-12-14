@@ -1,0 +1,180 @@
+
+
+main {
+    font-family: inter,sans-serif;
+    
+}
+main > div {
+    margin-left: 11px;
+}
+
+
+.padrao{
+    width: 340px;
+    margin: auto;
+    
+}
+
+.apresentacao h3 {
+    
+    color:white;
+    font-weight: 300;
+    font-size: 1.1em;
+
+    margin-top: 17px;
+
+
+}
+.apresentacao h1{
+    
+
+    font-family: GT Walsheim Pro, 'sanserif';
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    background: linear-gradient(90deg, #7404BF 4.38%, #33D2FF 52.19%, #0029FA 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.apresentacao p {
+    margin-top: 27px;
+    margin-bottom: 50px;
+    
+    width: 270px;
+    
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    text-indent: 10px;
+}
+
+
+
+h2{
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+.conhecimentos_caixas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    width: 320px;
+    margin: auto;
+
+    margin-top: 2.5em;
+}
+
+.caixa_logo {
+    background-color: #181818;
+    border-radius: 3px;
+    width: 118px;
+    height: 118px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.projetos { 
+    margin: auto;
+    margin-top: 50px;
+
+    border-top: 1px solid gray;
+
+    padding-top: 20px;
+
+    width: 340px;
+
+    
+    
+}
+
+.projetos h2 {
+    text-align: center;
+}
+
+
+
+
+
+.experiencias {
+    margin-top: 50px;
+    padding-top: 20px;
+
+    border-top: 1px solid gray;
+}
+
+.bts {
+    display: flex;
+    margin-top: 30px;
+}
+.bts button {
+    width: 50%;
+    height: 40px;
+    
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 3px;
+}
+
+.bt_cargill{
+    background-color: #2e2e2e;
+    cursor: pointer;
+    
+}
+
+.bt_sprink{
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+
+.cargill, .sprink {
+    margin-top: 30px;
+    
+}
+
+.data{
+    font-size: 13px;
+    font-weight: 200;
+    color: #C4C4C4;
+}
+
+.cargo {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.empresa{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #6CACE4;
+}
+
+.cargill>div, .sprink>div{
+    margin-top: 20px;
+}
+.cargill>div>p, .sprink>div>p{
+    margin-top: 10px;
+}
+
+.sprink {
+    
+}
+.cargill{
+    display: none;
+}
