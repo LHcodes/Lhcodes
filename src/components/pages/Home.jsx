@@ -8,6 +8,11 @@ import css from '../../../public/img/logo/conhecimentos/css3.svg'
 import js from '../../../public/img/logo/conhecimentos/js.svg'
 import react from '../../../public/img/logo/conhecimentos/react.svg'
 import figma from '../../../public/img/logo/conhecimentos/figma.svg'
+import github from '../../../public/img/apresentacao/ap_github.svg'
+import linkedin from '../../../public/img/apresentacao/ap_linkedin.svg'
+import instagram from '../../../public/img/apresentacao/ap_instagram.svg'
+
+
 
 
 import Projetos1 from './projects/Projetos1'
@@ -36,9 +41,9 @@ function Home() {
                     <a href="../../public/doc/cv.pdf" download='CV_LuizHenrique' className={style.bt_cv}>Baixar CV</a>
 
                     <div className={style.redes_ap}>
-                        <a href="https://github.com/LHcodes" target='blank' className={style.rede1}><img src="../../../public/img/apresentacao/ap_github.svg" alt="github" /></a>
-                        <a href="https://www.linkedin.com/in/luiz-henrique-silva-87a72916a/" target='blank' className={style.rede2}><img src="../../../public/img/apresentacao/ap_linkedin.svg" alt="linkedin" /></a>
-                        <a href="" target='blank' className={style.rede3}><img src="../../../public/img/apresentacao/ap_instagram.svg" alt="instagram" /></a>
+                        <a href="https://github.com/LHcodes" target='blank' className={style.rede1}><img src={github} alt="github" /></a>
+                        <a href="https://www.linkedin.com/in/luiz-henrique-silva-87a72916a/" target='blank' className={style.rede2}><img src={linkedin} alt="linkedin" /></a>
+                        <a href="" target='blank' className={style.rede3}><img src={instagram} /></a>
 
                     </div>
 
@@ -117,11 +122,11 @@ function Home() {
 
                     <div className={style.sprink} id='display-s'>
                         <p className={style.data}>Dez 2019 - jul 2021</p>
-                        <h3 className={style.cargo}>Aprediz</h3>
+                        <h3 className={style.cargo}>Aprendiz</h3>
                         <p className={style.empresa}>Sprink / SP - São Paulo</p>
                         <div>
-                            <p className={style.texto}>- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
-                            <p className={style.texto}>- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                            <p>- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                            <p>- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
                         </div>
                     </div>
 

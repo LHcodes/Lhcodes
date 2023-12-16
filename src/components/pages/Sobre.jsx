@@ -2,7 +2,7 @@ import style from './Sobre.module.css'
 
 function Sobre() {
     return (
-        <div>
+        <div className={style.container}>
             <h1>Sobre</h1>
             <p>
                 Eu sou Luiz Henrique, tenho 23 anos e curto bastante jogos. Apesar de soar meio comum, passo a maior parte do tempo estudando. Antes de fazer qualquer coisa, seja cozinhar ou jogar um tabuleiro, dou uma estudada pra tirar o melhor proveito. Também gosto de sair com a família e os amigos.

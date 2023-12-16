@@ -1,7 +1,8 @@
 .container {
-    margin-top: 5px;
+    
+    padding-top: 40%;
     padding-left: 10px;
-    height: 56.6vh;
+    height: 75vh;
 }
 .container h1 {
     font-weight: 300;

@@ -3,6 +3,9 @@ import Logo from '../../../public/img/logo/meuLogo.svg';
 import { Link } from 'react-router-dom';
 import style from './Header.module.css';
 
+import Menu from '../../../public/img/icon/menu.svg'
+import Menu_sair from '../../../public/img/icon/menu_sair.svg'
+
 function Header() {
     const btMenuRef = useRef(null);
 
@@ -24,10 +27,10 @@ function Header() {
         const navbar = document.getElementById('navbar');
 
         if (navbar.style.display === 'none') {
-            btMenuRef.current.src = '../../../public/img/icon/menu_sair.svg';
+            btMenuRef.current.src = `${Menu_sair}`;
             navbar.style.display = 'block';
         } else {
-            btMenuRef.current.src = '../../../public/img/icon/menu.svg';
+            btMenuRef.current.src = `${Menu}`;
             navbar.style.display = 'none';
         }
     }
@@ -37,7 +40,7 @@ function Header() {
         const navbar = document.getElementById('navbar');
         if (navbar) {
             navbar.style.display = 'none';
-            btMenuRef.current.src = '../../../public/img/icon/menu.svg';
+            btMenuRef.current.src = `${Menu}`;
         }
     };
 
@@ -50,7 +53,7 @@ function Header() {
 
                 <div className={style.icon}>
                     <img
-                        src="../../../public/img/icon/menu.svg"
+                        src={Menu}
                         alt="menu"
                         id='bt_menu'
                         ref={btMenuRef}
