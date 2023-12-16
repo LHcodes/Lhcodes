@@ -7,8 +7,20 @@
     
     
 }
+.link{
+    color: white;
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
 
-.projeto > img {
+    font-weight: 400;
+}
+.link > h3:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.574);
+    color: rgba(45, 45, 243, 0.407);
+
+}
+
+.link > img {
     width: 290px;
     height: 338px;
     border-radius: 3px;

@@ -1,0 +1,55 @@
+.container {
+    margin-top: 5px;
+    padding-left: 10px;
+    height: 56.6vh;
+}
+.container h1 {
+    font-weight: 300;
+}
+
+.container p {
+    margin-top: 20px;
+    width: 70%;
+}
+
+.redes {
+    display: flex;
+    margin-top: 20px;
+    
+}
+.redes_instagram > a, .redes_linkedin > a {
+    display: flex;
+    flex-direction: row;
+    margin-right: 3em;
+    font-family: 'Khula', sans-serif;
+
+}
+.redes_instagram > a {
+    color: #F55376;
+    text-decoration: none;
+}
+.redes_linkedin > a {
+    color: #0288D1;
+    text-decoration: none;
+}
+
+.contato {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato_telefone, .contato_email {
+    display: flex;
+    margin-top: 20px;
+    
+    
+}
+
+.contato_telefone p, .contato_email p {
+    margin-left: 50px;
+    margin-top: 10px;
+    
+    
+}

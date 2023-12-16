@@ -1,30 +1,55 @@
 .header {
     display: flex;
+    flex-direction: column;
+}
+
+.topo_header {
+    display: flex;
     align-items: center;
     justify-content: space-around;
-    
+
 
 
     height: 125px;
     width: 100%;
+    
 
 }
 
-.logo img {
+.logo_passaro {
     width: 157px;
     height: 81px;
 
     cursor: pointer;
 }
 
-
-
 .icon img {
+    width: 40px;
+    height: 40px;
+}
+.navbar {
+    display: none;
+}
 
-    width: 30px;
-    height: 30px;
+.navbar_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5em;
+    margin-top: 50px;
+    font-family: 'Mulish', sans-serif;
 
-    fill: white;
+}
 
-    cursor: pointer;
+.link {
+    margin-top: 50px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+}
+
+.link:hover {
+    color: rgb(140, 0, 255);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.531);
 }

@@ -28,7 +28,7 @@ main > div {
 .apresentacao h1{
     
 
-    font-family: GT Walsheim Pro, 'sanserif';
+    font-family: GT Walsheim Pro, 'sans-serif';
     font-size: 46px;
     font-style: normal;
     font-weight: 700;
@@ -48,7 +48,6 @@ main > div {
     width: 270px;
     
     color: #FFF;
-    font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
@@ -67,7 +66,7 @@ h2{
 .conhecimentos_caixas {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    gap: 40px;
 
     width: 320px;
     margin: auto;
@@ -75,14 +74,44 @@ h2{
     margin-top: 2.5em;
 }
 
+
 .caixa_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     background-color: #181818;
     border-radius: 3px;
     width: 118px;
     height: 118px;
+    overflow: hidden; /* Para esconder o texto que pode extrapolar a borda */
+  }
+  
+  
+  .overlayText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+  
+  .caixa_logo:hover .overlayText {
+    opacity: 1;
+  }
+
+.caixa_logo:hover {
+    border: 1px solid;
+    border-image: linear-gradient(to right, #975fff, #7be6fe);
+    border-image-slice: 1;
 }
 
 
@@ -173,8 +202,9 @@ h2{
 }
 
 .sprink {
+    display: none;
     
 }
 .cargill{
-    display: none;
+    display: block;
 }
