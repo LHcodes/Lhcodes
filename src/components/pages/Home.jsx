@@ -14,23 +14,39 @@ import Projetos1 from './projects/Projetos1'
 import Projetos2 from './projects/Projetos2'
 import Projetos3 from './projects/Projetos3'
 
+import { configureScrollReveal } from './scrollReveal.js';
+
 
 
 
 function Home() {
     botao()
-    return(
+    useEffect(() => {
+        configureScrollReveal();
+    }, []);
+
+    return (
         <div>
             <main id='ap'>
-                <div className={`${style.apresentacao} ${style.padrao}`}>
+                <div className={`${style.apresentacao} ${style.padrao} scroll-reveal`}>
                     <h3>Oi, sou</h3>
-                    <h1>Luiz Henrique</h1>
-                    <p>Também conhecido como LHcodes, e estou entusiasmado em compartilhar minha jornada e paixão pelo desenvolvimento full stack através deste espaço digital. Sou um entusiasta autodidata da tecnologia, mergulhando de cabeça no vasto e fascinante mundo da programação.</p>
+                    <h1 className={style.nome}>Luiz Henrique</h1>
+                    <p className={style.texto}>Também conhecido como LHcodes, e estou entusiasmado em compartilhar minha jornada e paixão pelo desenvolvimento full stack através deste espaço digital. Sou um entusiasta autodidata da tecnologia, mergulhando de cabeça no vasto e fascinante mundo da programação.</p>
+
+                    <a href="../../public/doc/cv.pdf" download='CV_LuizHenrique' className={style.bt_cv}>Baixar CV</a>
+
+                    <div className={style.redes_ap}>
+                        <a href="https://github.com/LHcodes" target='blank' className={style.rede1}><img src="../../../public/img/apresentacao/ap_github.svg" alt="github" /></a>
+                        <a href="https://www.linkedin.com/in/luiz-henrique-silva-87a72916a/" target='blank' className={style.rede2}><img src="../../../public/img/apresentacao/ap_linkedin.svg" alt="linkedin" /></a>
+                        <a href="" target='blank' className={style.rede3}><img src="../../../public/img/apresentacao/ap_instagram.svg" alt="instagram" /></a>
+
+                    </div>
+
                 </div>
-                <div className={`${style.conhecimentos} ${style.padrao}`}>
+                <div className={`${style.conhecimentos} ${style.padrao} scroll-reveal`}>
                     <h2>Conhecimentos</h2>
                     <div className={style.conhecimentos_caixas}>
-                        <div className={style.caixa_logo}>
+                        <div className={`${style.caixa_logo} ${style.caixa1} `}>
                             <div className={style.overlayContainer}>
                                 <img src={html5} alt="HTML5" />
                                 <div className={style.overlayText}>
@@ -38,7 +54,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className={style.caixa_logo}>
+                        <div className={`${style.caixa_logo} ${style.caixa2} `}>
                             <div className={style.overlayContainer}>
                                 <img src={css} alt="CSS 3" />
                                 <div className={style.overlayText}>
@@ -46,7 +62,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className={style.caixa_logo}>
+                        <div className={`${style.caixa_logo} ${style.caixa3} `}>
                             <div className={style.overlayContainer}>
                                 <img src={js} alt="JavaScript" />
                                 <div className={style.overlayText}>
@@ -54,7 +70,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className={style.caixa_logo}>
+                        <div className={`${style.caixa_logo} ${style.caixa4} `}>
                             <div className={style.overlayContainer}>
                                 <img src={react} alt="react" />
                                 <div className={style.overlayText}>
@@ -62,7 +78,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className={style.caixa_logo}>
+                        <div className={`${style.caixa_logo} ${style.caixa5} `}>
                             <div className={style.overlayContainer}>
                                 <img src={figma} alt="figma" />
                                 <div className={style.overlayText}>
@@ -72,18 +88,18 @@ function Home() {
                         </div>
 
                     </div>
-                </div>               
-                <div className={`${style.projetos} ${style.padrao}`}>
+                </div>
+                <div className={`${style.projetos} ${style.padrao} scroll-reveal`}>
                     <h2>Projetos</h2>
 
-                    <Projetos1/>
-                    <Projetos2/>
-                    <Projetos3/>
+                    <Projetos1 />
+                    <Projetos2 />
+                    <Projetos3 />
 
                 </div>
 
 
-                <div className={`${style.experiencias} ${style.padrao}`}>
+                <div className={`${style.experiencias} ${style.padrao} scroll-reveal`}>
                     <h2>Experiências</h2>
                     <div className={style.bts}>
                         <button className={style.bt_cargill} id='bt-c'>Cargill</button>
@@ -94,26 +110,26 @@ function Home() {
                         <h3 className={style.cargo}>Analista jr</h3>
                         <p className={style.empresa}>Cargill/ SP - São Paulo</p>
                         <div>
-                            <p>- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
-                            <p>- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                            <p className={style.texto}>- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                            <p className={style.texto}>- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
                         </div>
                     </div>
 
                     <div className={style.sprink} id='display-s'>
-                    <p className={style.data}>Dez 2019 - jul 2021</p>
+                        <p className={style.data}>Dez 2019 - jul 2021</p>
                         <h3 className={style.cargo}>Aprediz</h3>
                         <p className={style.empresa}>Sprink / SP - São Paulo</p>
                         <div>
-                            <p>- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
-                            <p>- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                            <p className={style.texto}>- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                            <p className={style.texto}>- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
                         </div>
                     </div>
 
                 </div>
             </main>
-            <script src='./home.js'></script>
+            
         </div>
-        
+
     )
 }
 export default Home

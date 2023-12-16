@@ -15,13 +15,19 @@ main > div {
     
 }
 
+.apresentacao {
+    padding-top: 200px;
+}
+
+
+
 .apresentacao h3 {
     
     color:white;
     font-weight: 300;
     font-size: 1.1em;
 
-    margin-top: 17px;
+    /*margin-top: 17px;*/
 
 
 }
@@ -33,6 +39,7 @@ main > div {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-top: 30px;
 
     background: linear-gradient(90deg, #7404BF 4.38%, #33D2FF 52.19%, #0029FA 100%);
     background-clip: text;
@@ -42,10 +49,10 @@ main > div {
 }
 
 .apresentacao p {
-    margin-top: 27px;
+    margin-top: 40px;
     margin-bottom: 50px;
     
-    width: 270px;
+    width: 300px;
     
     color: #FFF;
     font-size: 18px;
@@ -55,12 +62,46 @@ main > div {
     text-indent: 10px;
 }
 
+.bt_cv{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Khula', sans-serif;
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    width: 80%;
+    background-color: #222121;
+    border-radius: 50px;
+    border: 1px solid rgba(128, 0, 128, 0.358);
+    
+}
+.bt_cv:hover {
+    color: rgb(126, 6, 122);
+    border: 1px solid rgba(128, 0, 128, 0.912);
+
+}
+
+.redes_ap {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 80px;
+}
+
 
 
 h2{
     font-size: 20px;
     font-weight: 300;
 
+}
+
+.conhecimentos{
+    margin-top: 50px;
 }
 
 .conhecimentos_caixas {
@@ -207,4 +248,12 @@ h2{
 }
 .cargill{
     display: block;
+}
+
+.apresentacao, .conhecimentos, .projetos, .experiencias, .nome, .texto, .bt_cv, .rede1, .rede2, .rede3 {
+    visibility: hidden;
+}
+
+.caixa1, .caixa2, .caixa3, .caixa4, .caixa5 {
+    visibility: hidden;
 }

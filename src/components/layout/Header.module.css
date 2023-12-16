@@ -29,6 +29,7 @@
 }
 .navbar {
     display: none;
+    background-color: #111111;
 }
 
 .navbar_link {
