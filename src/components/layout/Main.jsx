@@ -12,6 +12,7 @@ function Main() {
     <div className={styles.main}>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Lhcodes" element={<Home />} />
         <Route path="/projetos" element={<Projetos />} />
         <Route path="/contato" element={<Contato/>} />
         <Route path="/sobre" element={<Sobre/>} />
