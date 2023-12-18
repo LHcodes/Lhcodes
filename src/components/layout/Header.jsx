@@ -7,7 +7,9 @@ import Menu from '../../../public/img/icon/menu.svg'
 import Menu_sair from '../../../public/img/icon/menu_sair.svg'
 
 function Header() {
+
     const btMenuRef = useRef(null);
+
 
     useEffect(() => {
         // Adicionar o event listener aqui usando o ref
@@ -32,8 +34,11 @@ function Header() {
         } else {
             btMenuRef.current.src = `${Menu}`;
             navbar.style.display = 'none';
+
         }
     }
+
+
 
     // Adicionando uma função para fechar o menu quando um link é clicado
     const closeMenu = () => {
@@ -42,13 +47,15 @@ function Header() {
             navbar.style.display = 'none';
             btMenuRef.current.src = `${Menu}`;
         }
+        
     };
+
 
     return (
         <div className={style.header}>
             <div className={style.topo_header}>
                 <div className={style.logo}>
-                    <Link to={'/'}><img src={Logo} alt="Logo home" className={style.logo_passaro}/></Link>
+                    <Link to={'/'}><img src={Logo} alt="Logo home" className={style.logo_passaro} /></Link>
                 </div>
 
                 <div className={style.icon}>

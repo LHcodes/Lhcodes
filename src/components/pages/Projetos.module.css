@@ -1,6 +1,10 @@
 .container{
     padding-top: 40%;
 }
- h1 {
-    padding-left: 15px;
- }
+
+@media screen and (min-width: 780px) {
+    .container> div{ 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

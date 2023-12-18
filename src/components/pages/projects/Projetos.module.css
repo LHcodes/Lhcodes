@@ -51,9 +51,14 @@
     font-weight: 200;
 }
 
-.ferramentas_projeto{
+.ferramentas_projeto p{
     margin-top: 15px;
     font-size: 14px;
     font-weight: 200;
-    color: #6CACE4;
+    color: #919fea;
+}
+
+@media screen and (min-width: 780px) {
+
+    
 }

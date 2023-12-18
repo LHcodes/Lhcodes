@@ -1,5 +1,10 @@
 import style from './Contato.module.css'
 
+import instagram from "../../../public/img/icon/instagram.svg"
+import linkedin from "../../../public/img/icon/linkedin.svg"
+import wht from "../../../public/img/icon/whatsapp.svg"
+import email from "../../../public/img/icon/email.svg"
+
 function Contato() {
     return (
         <div className={style.container}>
@@ -9,25 +14,25 @@ function Contato() {
             <div className={style.redes}>
                 <div className={style.redes_instagram}>
                     <a href="">
-                        <img src="../../public/img/icon/instagram.svg" alt="Instagram" />
+                        <img src={instagram}alt="Instagram" />
                         <p>Instagram</p>
                     </a>
                 </div>
                 <div className={style.redes_linkedin}>
                     <a href="">
-                        <img src="../../public/img/icon/linkedin.svg" alt="Linkedin" />
+                        <img src={linkedin} alt="Linkedin" />
                         <p>Linkedin</p>
                     </a>
                 </div>
             </div>
             <div className={style.contato}>
                 <div className={style.contato_telefone}>
-                    <img src="../../public/img/icon/whatsapp.svg" alt="whatsapp" />
+                    <img src={wht} alt="whatsapp" />
                     <p>(11) 91174-1708</p>
 
                 </div>
                 <div className={style.contato_email}>
-                    <img src="../../public/img/icon/email.svg" alt="Email" />
+                    <img src={email} alt="Email" />
                     <p>lhcodes@outlook.com</p>
                 </div>
             </div>

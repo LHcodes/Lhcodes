@@ -1,6 +1,8 @@
 .header {
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid rgba(1, 81, 255, 0.292);
+    box-shadow: 1px 1px 10px rgba(128, 0, 128, 0.758);
 }
 
 .topo_header {
@@ -29,6 +31,7 @@
 }
 .navbar {
     display: none;
+    
     background-color: #111111;
 }
 
@@ -53,4 +56,37 @@
 .link:hover {
     color: rgb(140, 0, 255);
     border-bottom: 1px solid rgba(255, 255, 255, 0.531);
+    box-shadow: 0px 5px 5px rgba(128, 0, 128, 0.188);
+}
+
+@media screen and (min-width: 768px) {
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        
+    }
+    .topo_header {
+        width: auto;
+    }
+
+    .icon {
+        display: none;
+    }
+    .navbar{
+
+        display: block !important;
+        height: 10px;
+    }
+    .navbar_link{
+        flex-direction: row;
+        height: auto;
+        margin-top: 0;
+        
+        
+    }
+    .link {
+        margin-right: 40px;
+    }
 }

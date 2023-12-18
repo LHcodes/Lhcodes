@@ -1,9 +1,16 @@
 .container{
     padding-top: 40%;
+    height: 100vh;
 }
 
 p {
     color: rgb(195, 191, 191);
 
     margin-top: 30px;
+}
+
+@media screen and (min-width: 780px) {
+    p{ 
+        font-size: 1.3em;
+    }
 }
