@@ -73,13 +73,13 @@ function Header() {
                     <Link onClick={closeMenu} className={style.link} to={'/'}>
                         Home
                     </Link>
-                    <Link onClick={closeMenu} className={style.link} to={'/projetos'}>
+                    <Link onClick={closeMenu} className={style.link} to={'/Lhcodes/projetos'}>
                         Projetos
                     </Link>
-                    <Link onClick={closeMenu} className={style.link} to={'/contato'}>
+                    <Link onClick={closeMenu} className={style.link} to={'/Lhcodes/contato'}>
                         Contato
                     </Link>
-                    <Link onClick={closeMenu} className={style.link} to={'/sobre'}>
+                    <Link onClick={closeMenu} className={style.link} to={'/Lhcodes/sobre'}>
                         Sobre
                     </Link>
                 </div>

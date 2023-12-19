@@ -13,9 +13,9 @@ function Main() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Lhcodes" element={<Home />} />
-        <Route path="/projetos" element={<Projetos />} />
-        <Route path="/contato" element={<Contato/>} />
-        <Route path="/sobre" element={<Sobre/>} />
+        <Route path="/Lhcodes/projetos" element={<Projetos />} />
+        <Route path="/Lhcodes/contato" element={<Contato/>} />
+        <Route path="/Lhcodes/sobre" element={<Sobre/>} />
 
       </Routes>
     </div>
