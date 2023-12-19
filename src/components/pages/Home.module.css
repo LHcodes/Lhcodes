@@ -62,8 +62,8 @@ main > div {
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
-    line-height: 24px;
-    text-indent: 10px;
+    line-height: 2em;
+    
 }
 
 .bt_cv{

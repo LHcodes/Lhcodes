@@ -32,7 +32,7 @@ function Home() {
         configureScrollReveal();
     }, []);
 
-    
+
     return (
         <div>
             <main id='ap'>
@@ -43,7 +43,7 @@ function Home() {
                     <div className={style.ap_conteudo}>
                         <h3>Oi, sou</h3>
                         <h1 className={style.nome}>Luiz Henrique</h1>
-                        <p className={style.texto}>Também conhecido como LHcodes, e estou entusiasmado em compartilhar minha jornada e paixão pelo desenvolvimento full stack através deste espaço digital. Sou um entusiasta autodidata da tecnologia, mergulhando de cabeça no vasto e fascinante mundo da programação.</p>
+                        <p className={style.texto}>Igualmente identificado como LHcodes, sinto-me entusiasmado em partilhar minha trajetória e dedicação ao desenvolvimento full stack por meio deste espaço digital. Sou um entusiasta autodidata da tecnologia, imergindo profundamente no amplo e fascinante universo da programação.</p>
                         <a href="../../public/doc/cv.pdf" download='CV_LuizHenrique' className={style.bt_cv}>Baixar CV</a>
                         <div className={style.redes_ap}>
                             <a href="https://github.com/LHcodes" target='blank' className={style.rede1}><img src={github} alt="github" /></a>
@@ -58,7 +58,7 @@ function Home() {
                     <div className={style.conhecimetos_flex}>
                         <div className={style.conhecimentos_img}>
                             <img src={corvo} alt="" />
-                            
+
                         </div>
                         <div>
                             <div className={style.conhecimentos_caixas}>
@@ -129,8 +129,16 @@ function Home() {
                         <h3 className={style.cargo}>Analista jr</h3>
                         <p className={style.empresa}>Cargill/ SP - São Paulo</p>
                         <div>
-                            <p className={style.texto}>- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
-                            <p className={style.texto}>- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                            <p className={style.texto}>· Auxílio no desenvolvimento das operações
+                                e resolução de problemas, prestando
+                                serviço de atendimento ao fornecedor de
+                                ponta.</p>
+                            <p className={style.texto}>· Investigação e correção, além do aumento
+                                da prioridade de problemas de projetos</p>
+                            <p className={style.texto}>· Aumento da eficiência do escritório ao
+                                modernizar os sistemas de organização de
+                                documentos e implementar com eficácia
+                                soluções do tipo visual basic for applications .</p>
                         </div>
                     </div>
 
@@ -139,8 +147,9 @@ function Home() {
                         <h3 className={style.cargo}>Aprendiz</h3>
                         <p className={style.empresa}>Sprink / SP - São Paulo</p>
                         <div>
-                            <p>- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
-                            <p>- Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                            <p>· Desenvolver planilhas automatizadas para efetuar o monitoramento dos pagamentos aos colaboradores.</p>
+                            <p>· Supervisionar a atribuição de responsabilidades aos novos aprendizes, otimizando a distribuição de tarefas.</p>
+                            <p>· Gerenciar a documentação referente aos novos colaboradores e aos processos organizacionais.</p>
                         </div>
                     </div>
 

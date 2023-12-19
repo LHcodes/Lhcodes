@@ -1,8 +1,10 @@
 .header {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid rgba(1, 81, 255, 0.292);
-    box-shadow: 1px 1px 10px rgba(128, 0, 128, 0.758);
+    border-bottom: 1px solid ;
+    border-image: linear-gradient(90deg, #7e40f0, #7be6fe , rgb(2, 2, 221));
+    border-image-slice: 1;
+    
 }
 
 .topo_header {
