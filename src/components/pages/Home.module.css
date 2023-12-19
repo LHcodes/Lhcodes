@@ -342,6 +342,18 @@ h2{
 
 }
 
+.conhecimentos_img{
+    display: none;
+}
+.conhecimentos_img img{
+    width: 400px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+
+
+
 @media screen and (min-width: 1500px){
     .apresentacao{
         flex-direction: row;
@@ -363,7 +375,14 @@ h2{
     .conhecimetos_flex{
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
         
+    }
+    .conhecimentos_img {
+        display: block !important;
+    }
+    .conhecimentos_caixas{
+        grid-template-columns: 1fr 1fr 1fr;
     }
     
 }

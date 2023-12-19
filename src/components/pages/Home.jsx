@@ -12,6 +12,7 @@ import github from '../../../public/img/apresentacao/ap_github.svg'
 import linkedin from '../../../public/img/apresentacao/ap_linkedin.svg'
 import instagram from '../../../public/img/apresentacao/ap_instagram.svg'
 import ap_img from '../../../public/img/ap_img.jpeg'
+import corvo from '../../../public/img/img_conhecimentos.jpeg'
 
 
 
@@ -31,6 +32,7 @@ function Home() {
         configureScrollReveal();
     }, []);
 
+    
     return (
         <div>
             <main id='ap'>
@@ -54,18 +56,9 @@ function Home() {
                 <div className={`${style.conhecimentos} ${style.padrao} scroll-reveal`}>
                     <h2>Conhecimentos</h2>
                     <div className={style.conhecimetos_flex}>
-                        <div>
-                            <p>*passe o cursor do mouse no card para ler*</p>
-                            <p>HTML5 é a quinta versão do HTML, usado para estruturar conteúdo na web, com suporte a multimídia e recursos avançados.</p>
-                            <p>
-                                CSS3 é a terceira versão do CSS, proporcionando recursos avançados para estilizar páginas web, incluindo transições, animações e aprimoramentos visuais.
-                            </p>
-                            <p>
-                                JavaScript é uma linguagem de programação de alto nível, dinâmica e orientada a objetos. Originalmente desenvolvida para ser executada nos navegadores, ela permite a manipulação dinâmica do conteúdo de páginas web, interação com o usuário, validação de formulários e criação de animações.</p>
-                            <p>React é uma biblioteca JavaScript para construir interfaces de usuário interativas e reutilizáveis. Desenvolvida pelo Facebook, é usada principalmente para criar aplicações web de página única SPAs e oferece uma forma eficiente de gerenciar o estado da aplicação e atualizar dinamicamente a interface do usuário.</p>
-                            <p>
-                            Figma é uma ferramenta de design colaborativo online usada para criar interfaces de usuário e designs gráficos.
-                            </p>
+                        <div className={style.conhecimentos_img}>
+                            <img src={corvo} alt="" />
+                            
                         </div>
                         <div>
                             <div className={style.conhecimentos_caixas}>

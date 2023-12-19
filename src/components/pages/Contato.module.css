@@ -1,6 +1,6 @@
 .container {
     
-    padding-top: 40%;
+    padding-top: 300px;
     padding-left: 10px;
     height: 75vh;
 }
@@ -9,6 +9,7 @@
 }
 
 .container p {
+    text-align: center;
     margin-top: 20px;
     width: 70%;
 }
